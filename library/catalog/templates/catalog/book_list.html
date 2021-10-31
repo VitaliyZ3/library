@@ -1,0 +1,64 @@
+{% extends 'catalog/base.html'%}
+
+{% block title %} Главная страница {% endblock %}
+
+{% block main %}
+
+
+{% for book in object_list %}
+
+
+{% if  forloop.counter|divisibleby:6 %}
+</div><div id='container'>
+  <div class='book'>
+<div class="card" style="width: 15rem;" >
+  <img src="/media/{{book.photo}}" class="card-img-top" alt="{{ book.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{ book.name}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Автор: {{ book.author}}</li>
+
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Перейти к оформлению</a>
+  </div>
+</div>
+</div>
+{% elif forloop.first %}
+<div id='container'>
+  <div class='book'>
+<div class="card" style="width: 15rem;" >
+  <img src="/media/{{book.photo}}" class="card-img-top" alt="{{ book.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{ book.name}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Автор: {{ book.author}}</li>
+
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Перейти к оформлению</a>
+  </div>
+</div>
+</div>
+{% else %}
+<div class='book'>
+<div class="card" style="width: 15rem;" >
+  <img src="/media/{{book.photo}}" class="card-img-top" alt="{{ book.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{ book.name}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Автор: {{ book.author}}</li>
+
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Перейти к оформлению</a>
+  </div>
+</div>
+</div>
+{% endif%}
+  {% endfor %}
+
+{% endblock %}

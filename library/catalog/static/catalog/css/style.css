@@ -1,0 +1,13 @@
+#container {
+    display: flex;
+    Justify-content:center;
+}
+
+.book {
+    padding-left: 12px;
+    padding-top: 20px; 
+}
+
+body{
+    background-color: rgb(233, 221, 204);
+}
