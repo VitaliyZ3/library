@@ -85,7 +85,7 @@ ul.hdr li:last-child{
     transition: 0.3s;
     border-radius: 5px; /* 5px округленные углы */
     width: 15%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     box-shadow: 0px 5px 31px 0px rgba(34, 60, 80, 0.2);
     background-color: #e3d9cf;
     margin-left: 12px;
@@ -106,7 +106,6 @@ img {
 .container {
     margin-top: 10px;
     padding: 2px 16px;
-    height: 7%;
     
 }
 .bottom-container{
