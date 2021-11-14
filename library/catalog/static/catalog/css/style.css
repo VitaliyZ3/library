@@ -1,13 +1,163 @@
 #container {
     display: flex;
     Justify-content:center;
+    
 }
 
-.book {
-    padding-left: 12px;
-    padding-top: 20px; 
-}
 
+html{
+    overflow-x: hidden;
+}
 body{
-    background-color: rgb(233, 221, 204);
+    background-color:#e2d8ce;
 }
+
+a:hover{
+    opacity: 50%;
+}
+
+.center-div1{
+    display: flex;
+}
+.center-div2{
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    margin-left: 43%;
+  }
+
+.navashadow{
+    box-shadow: 3px 6px 10px 6px rgba(34, 60, 80, 0.2);
+    background-color: #e3d9cf;
+}
+
+ul.hdr {
+    margin: 0; /* Обнуляем значение отступов */
+    margin-bottom: 1%;
+    padding-bottom: 10px;
+    padding-top: 7px;
+
+}
+ul.hdr li {
+    display: inline-block; /* Отображать как строчный элемент */
+    margin-right: 8px; /* Отступ слева */ 
+    z-index: 50px;
+    color: black;
+}
+
+ul.hdr li > a{
+    font-family: Bahnschrift;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+ul.hdr li > a:hover{
+    text-decoration: none;
+}
+
+#nav-logo-li{
+    margin-right: 3%;
+}
+
+#nav-logo{
+    font-family:Bodoni MT;
+    color: black;
+    font-size: 27px;
+    font-weight: 500;
+    margin-left: 3%;
+    
+}
+ul.hdr li:last-child{
+    float:right;
+    margin-right: 20px;
+}
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px округленные углы */
+    width: 300px;
+    padding-bottom: 2%;
+    box-shadow: 0px 5px 31px 0px rgba(34, 60, 80, 0.2);
+    background-color: #e3d9cf;
+    margin-left: 12px;
+    margin-top: 20px;
+  }
+  
+  /* Добавить закругленные углы в верхнем левом и верхнем правом углу изображения */
+img {
+    border-radius: 8px 8px 0 0;
+}
+
+.cards:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+/* Добавить некоторые прокладки внутри контейнера для карт */
+.container {
+    margin-top: 10px;
+    padding: 2px 16px;
+    height: 150px;
+    
+}
+.bottom-container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.item{
+    display: inline-block;
+}
+
+
+  input:-ms-input-placeholder {
+    color: #aea59e; 
+    font-style: italic; 
+    background: #f0ede8;
+  }
+
+  input {
+    color: #aea59e;
+  }
+  form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+  }
+  button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: #cabcac;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+  }

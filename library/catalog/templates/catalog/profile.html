@@ -1,0 +1,25 @@
+{% extends "catalog/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Профіль{% endblock %}
+
+{% block main %}
+
+<div class='center-div1'>
+    <div class='center-div2'>
+    {% for ticket in tickets %}
+        <div style="width: 1000px;" class="card" >
+            <div class="card-header">
+             Книга {{ ticket.book.name }}
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Автор {{ ticket.book.author }} </h5>
+              <p class="card-text">Срок здачі книги {{ ticket.date_of_delivery }} </p>
+
+            </div>
+          </div>
+    {% endfor %}
+
+</div>
+</div>
+{% endblock %}  

@@ -1,7 +1,9 @@
 from django.contrib import admin
-from .models import Book, Reader, Ticket
+from .models import Book,  Ticket
 # Register your models here.
 
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ['user', 'name', 'surname']
+    
 admin.site.register(Book)
-admin.site.register(Reader)
 admin.site.register(Ticket)
