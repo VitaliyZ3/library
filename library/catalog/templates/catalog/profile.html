@@ -5,10 +5,10 @@
 
 {% block main %}
 
-<div class='center-div1'>
-    <div class='center-div2'>
+
     {% for ticket in tickets %}
-        <div style="width: 1000px;" class="card" >
+  
+        <div style="width: 1000px; margin-left:25%; margin-bottom: 20px;" class="card" >
             <div class="card-header">
              Книга {{ ticket.book.name }}
             </div>
@@ -18,8 +18,8 @@
 
             </div>
           </div>
+
     {% endfor %}
 
-</div>
-</div>
+
 {% endblock %}  
