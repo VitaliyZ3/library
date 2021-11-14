@@ -15,7 +15,11 @@
     <h4><b>{{ book.name}}</b></h4>
     <p>Автор: {{ book.author}}</p>
     <div class="bottom-container">
+    {% if request.user.is_authenticated %}
     <a href="{% url 'selectdate' book.pk %}" >Перейти к оформлению</a>
+    {% else %}
+    <a href="{% url 'login'  %}" >Увійти</a>
+    {% endif %}
   </div>
   </div>
 </div>
